@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/fedem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputTexts"
+        android:layout_marginBottom="60dp"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/inputTexts"
+
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:text="@string/nombreUsuario"-->
+<!--            android:textColor="@color/rojo"-->
+<!--            android:textSize="20dp"-->
+
+
+<!--            />-->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/tilUusuario"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+
+
+
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/TietCorreo"-->
+<!--                android:layout_width="313dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+
+<!--                android:background="@drawable/radius"-->
+
+
+<!--                />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUusuario"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:textColorHint="@color/rojo"
+            app:boxStrokeWidth="2dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxStrokeColor="@drawable/liensa"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/TietCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilcontraseña"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:textColorHint="@color/rojo"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeColor="@drawable/liensa"
+            app:endIconMode="password_toggle"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/TietPassword"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:text="@string/contrasenya"-->
+
+<!--            android:textColor="@color/rojo"-->
+<!--            android:textSize="20dp"-->
+
+<!--            />-->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/tilcontraseña"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tilUusuario"-->
+<!--            app:endIconMode="password_toggle"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+
+<!--            >-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/TietPassword"-->
+<!--                android:layout_width="313dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:layout_gravity="center"-->
+
+<!--                android:background="@drawable/radius"-->
+
+<!--                />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/guardarUsu"
+
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintEnd_toEndOf="@id/inputTexts"
+        app:layout_constraintTop_toBottomOf="@id/inputTexts"
+
+        />
+    <TextView
+        android:id="@+id/Tverror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="error"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/rojo"
+        android:visibility="gone"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        app:backgroundTint="@color/rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tverror" />
+    <TextView
+        android:id="@+id/TvRegistroText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:text="@string/sinregistrar"
+        app:layout_constraintEnd_toStartOf="@id/TvRegistrate"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+   app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/TvRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrate"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toEndOf="@id/TvRegistroText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/rojo"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Border color when the TextInputLayout has focus -->
+    <item android:state_focused="true" android:color="@color/rojo" />
+
+    <!-- Border color when the TextInputLayout does not have focus -->
+    <item android:color="@color/rojo" />
+
+</selector>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoContactoActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/TvFedem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Fedem"
+        android:textColor="@color/rojo"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/TvSubTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/InfoContactoSubtitulo"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/TvFedem"
+        />
+    <TextView
+        android:id="@+id/TvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/InfoContactoParrafo"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/TvSubTitulo"/>
+
+    <fragment
+
+        app:layout_constraintTop_toBottomOf="@id/TvTexto"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/map"
+        tools:context=".InfoContactoActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:id="@+id/SMTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/InfoContactoSugerencias"
+        android:textColor="@color/rojo"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/map"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SMTexto">
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/rojo"
+            android:background="@drawable/facebook"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnTwitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/rojo"
+
+            android:background="@drawable/twitter"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnMail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/rojo"
+            android:background="@drawable/mail"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/rojo"
+            android:background="@drawable/call"
+
+            />
+
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

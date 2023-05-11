@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Fedem</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="correo">Usuario</string>
+    <string name="guardarUsu">Recordar Usuario</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_informacion">Información de contacto</string>
+    <string name="menu_acerca">Acerca de...</string>
+    <string name="Cllegar">Cómo llegar</string>
+    <string name="Hoteles">Hoteles cercanos</string>
+    <string name="Interes">Sitios de interés</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_fuera_title">Seras redirigido a una pagina exterior a la app</string>
+    <string name="dialog_delete_confirm">Aceptar</string>
+    <string name="dialog_delete_cancel">Cancelar</string>
+
+    <string name="open">Abierto</string>
+    <string name="close">Cerrado</string>
+    <string name="main_error_server">Error de peticion</string>
+    <string name="main_error_response">Error en la respuesta</string>
+    <string name="deleteAct">Eliminar</string>
+    <string name="anyadirAct">Añadir</string>
+    <string name="bonoUtilizado">El bono de este comercio ya ha sido utilizado</string>
+    <string name="usarBono">Usar Bono</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="perfil">Perfil</string>
+    <string name="nombreUsuario">Nombre de usuario</string>
+    <string name="provincia">Provincia</string>
+    <string name="genero">Genero</string>
+    <string name="logo">Logo FEDEM</string>
+    <string name="contrasenya">Contraseña</string>
+    <string name="sinregistrar">No estas registrado?</string>
+    <string name="registrate">Registrate</string>
+    <string name="acerca">Acerca de...</string>
+    <string name="AcercaDeTexto">La Federación Española de Empresas de Mudanzas (FEDEM) es la asociación que aglutina a las empresas de mudanzas en el ámbito nacional. En la actualidad, es la principal organización de empresas de Mudanzas, guardamuebles y trasteros de España. Las empresas integradas en FEDEM realizan mudanzas nacionales e internacionales, distribución de mueble nuevo, movimiento de obras de arte, mudanzas con container y depósito en guardamuebles.  Desde sus inicios, FEDEM lucha por profesionalizar el sector de las mudanzas. Para ello, se imponen medidas necesarias para las empresas que quieran formar parte de la asociación. También se pretende dar unidad a un sector que ha sido golpeado por la crisis económica con la irrupción de la competencia desleal.  Para lograr erradicar desde FEDEM se mantienen reuniones frecuentes con diferentes administraciones e instituciones, como la Inspección de Trabajo o la Agencia Tributaria para perseguir a aquellas empresas que incumplan con los mínimos legales. De esta manera se lograría un sector de las mudanzas verdaderamente profesional, con trabajadores dados de alta en la Seguridad Social, con empresas que cumplen sus obligaciones con Hacienda, lo que redundaría en beneficio de los clientes.  FEDEM es miembro de la Confederación Española de Transporte de Mercancías (CETM) y de la Federación Europea de Empresas de Mudanzas (FEDEMAC), una organización internacional cuyo objetivo es aglutinar a las diferentes federaciones europeas de mudanzas con el fin de coordinar esfuerzos para la protección del sector con una organización dinámica e interesante de empresas de mudanzas europeas, representada a través y por sus asociaciones nacionales.</string>
+    <string name="Fedem">Fedem</string>
+    <string name="InfoContactoSubtitulo">Federación Española de Empresas de Mudanzas</string>
+    <string name="InfoContactoParrafo">Para cualquier consulta puede ponerse en contacto con nosotros a través del siguiente formulario de contacto, llamarnos por teléfono o escribirnos a través de las Redes Sociales.</string>
+    <string name="InfoContactoSugerencias">Contacto/Buzón de sugerencias</string>
+    <string name="dia">"Dia  "</string>
+    <string name="BonoComidaAceptar">Estas seguro que quieres gastar este bono?</string>
+    <string name="nuestros_patrocinadores">Nuestros Patrocinadores</string>
+    <string name="TvDni">DNI</string>
+    <string name="TvTelefono">Telefono</string>
+    <string name="TvTelefonoContacto">Telefono de Contacto</string>
+    <string name="Contactar">Contactar</string>
+    <string name="ContactarAsistente">Quieres contactar con su compañer@?</string>
+    <string name="ActualizarPerfil">Editar perfil</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Eventos.InfoCompletaEventosPopUpFragment"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/rojo"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/IvEvento"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintDimensionRatio="H, 4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"/>
+
+    <!--    Label y texto de las horas del evento-->
+    <LinearLayout
+        android:id="@+id/horasLayout"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IvEvento"
+        app:layout_constraintBottom_toTopOf="@id/separador"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rojo"
+            android:text="Horario de: "/>
+
+
+        <TextView
+            android:id="@+id/tvHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rojo"
+            android:textSize="20dp"
+            android:gravity="start"
+            />
+
+
+    </LinearLayout>
+
+    <!--        Separador-->
+    <View
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/horasLayout"
+        android:layout_height="1dp"
+        android:background="@color/rojo" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/separador"
+        android:gravity="center"
+
+        />
+    <Button
+        android:id="@+id/btnAnyadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anyadirAct"
+        android:drawableRight="@drawable/ic_favorite_border"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FbEscuchar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        app:backgroundTint="@color/rojo"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteAct"
+        android:drawableRight="@drawable/ic_delete"
+        android:layout_marginTop="16dp"
+       app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

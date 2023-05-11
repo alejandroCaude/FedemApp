@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarPerfil">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputTexts"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Editar Perfil"
+                android:gravity="center"
+                android:textColor="@color/rojo"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/IvPerfil"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/inputTexts" />
+
+            <!--        GRUPO DEL NOMBRE-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:text=""
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        GRUPO DE USUARIO-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de usuario"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/TvNombreUsuario"
+                    android:text=""
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        GRUPO DE CORREO-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Correo electronico"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/TvCorreo"
+                    android:text=""
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        GRUPO DE DNI-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="DNI"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/TvDni"
+                    android:text=""
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        GRUPO DEL TELEFONO-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/TvTelefono"
+                    android:text=""
+                    android:inputType="number"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--        GRUPO DEL TELEFONO DE CONTACTO-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Telefono de contacto"
+                android:textColorHint="@color/rojo"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxStrokeColor="@drawable/liensa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/TvNumTelefonoContacto"
+                    android:text=""
+                    android:inputType="number"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/TvNumTelefonoContacto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

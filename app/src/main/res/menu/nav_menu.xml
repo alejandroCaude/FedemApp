@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/perfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_account"/>
+    <item
+        android:id="@+id/asistentes"
+        android:title="Asistentes"
+        android:icon="@drawable/ic_people"/>
+    <item
+        android:id="@+id/informacion"
+        android:title="Informacion de contacto"
+        android:icon="@drawable/ic_info"/>
+    <item
+        android:id="@+id/cerrarSesion"
+        android:title="Cerrar sesión"
+        android:icon="@drawable/ic_logout"/>
+    <item
+        android:id="@+id/acerca"
+        android:title="Acerca de nosotros" />
+</menu>

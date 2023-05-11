@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Common.FedemApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fedem"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false"
+            android:parentActivityName=".EditarPerfil"/>
+        <activity
+            android:name=".Asistentes.AsistentesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Asistentes.ItemAsistentesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Nav_headerDrawer"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Comidas.ItemComidasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eventos.ItemEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcercaActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuPrincipal.MenuActivity" />
+        <activity
+            android:name=".Perfil.PerfilActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuPrincipal.MenuActivity" />
+        <activity
+            android:name=".InfoContactoActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuPrincipal.MenuActivity" />
+        <activity
+            android:name=".MenuPrincipal.MenuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Login.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

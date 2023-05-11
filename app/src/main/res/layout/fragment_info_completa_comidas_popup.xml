@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Eventos.InfoCompletaEventosPopUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+    <!--    Imagen de la x para cerrar el popup-->
+        <ImageView
+            android:id="@+id/close_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:tint="@color/rojo" />
+    <!--    Label y texto del tipo de comida-->
+        <LinearLayout
+            android:id="@+id/tipoComidaLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IvEvento">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de comida:"
+                android:textColor="@color/rojo"
+                />
+            <TextView
+                android:id="@+id/tvTipoComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rojo"
+                android:layout_marginStart="4dp"
+               />
+        </LinearLayout>
+
+    <!--    Texto para el nombre del puesto-->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/rojo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <!--    Imagen del puesto de comida-->
+        <ImageView
+            android:id="@+id/IvEvento"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            app:layout_constraintDimensionRatio="H, 4:3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNombre"/>
+
+
+        <!--    Label y texto de la ubicacion del puesto-->
+        <LinearLayout
+            android:id="@+id/ubicaccionLayout"
+            android:layout_width="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tipoComidaLayout"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rojo"
+                android:text="Ubicación:"/>
+            <TextView
+                android:id="@+id/tvZona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+                android:gravity="start"
+                android:textColor="@color/rojo"
+                android:layout_marginStart="4dp"
+
+                />
+
+
+        </LinearLayout>
+
+<!--        Separador-->
+        <View
+            android:id="@+id/separador"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+
+            app:layout_constraintTop_toBottomOf="@id/tipoComidaLayout"
+            android:layout_height="1dp"
+            android:background="@color/rojo" />
+
+    <!--    Texto de la descripcion del puesto de comida-->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separador"
+
+            />
+
+    <!--    Texto que aparece cuando gastas un bono-->
+        <TextView
+            android:id="@+id/TvBonoUsado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bonoUtilizado"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/rojo"
+            app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"/>
+
+    <!--    Boton para que se diga lo que hay en la descripcion-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FbEscuchar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            app:backgroundTint="@color/rojo"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usarBono"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

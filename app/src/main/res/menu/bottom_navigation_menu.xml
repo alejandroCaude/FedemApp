@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicio"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/entrada"
+        android:enabled="true"
+        android:icon="@drawable/ic_ticket"
+
+        android:title="Entrada"/>
+
+    <item
+        android:id="@+id/eventos"
+        android:enabled="true"
+        android:icon="@drawable/ic_event"
+        android:title=""/>
+
+    <item
+        android:id="@+id/comidas"
+        android:enabled="true"
+        android:icon="@drawable/ic_fastfood"
+
+        android:title="Comidas"/>
+
+    <item
+        android:id="@+id/infoUtil"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+
+        android:title="Informacion util"/>
+
+</menu>
