@@ -36,7 +36,7 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 - **Correo Electrónico**: alejandrocaude02@gmail.com
 
-¡Gracias por visitar MudanzaEventApp!
+¡Gracias por visitar Fedem App!
 
 ---
 
