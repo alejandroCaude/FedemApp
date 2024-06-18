@@ -41,3 +41,4 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 ---
 
 *Este proyecto fue desarrollado como parte de mi TFG para el curso de Desarrollo de Aplicaciones Multiplataforma (DAM).*
+*Nota del proyecto: 8 sobre 10.*
