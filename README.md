@@ -1,6 +1,6 @@
 # Fedem App
 
-¡Bienvenido a Fedem App! Este proyecto es parte de mi Trabajo de Fin de Grado (TFG) del curso de Desarrollo de Aplicaciones Multiplataforma (DAM). MudanzaEventApp es una aplicación móvil destinada a usuarios registrados que participan en eventos de mudanza. La aplicación ofrece diversas funcionalidades basadas en el rol del usuario (usuario o acompañante).
+¡Bienvenido a Fedem App! Este proyecto es parte de mi Trabajo de Fin de Grado (TFG) del curso de Desarrollo de Aplicaciones Multiplataforma (DAM). Fedem App es una aplicación móvil destinada a usuarios registrados que participan en eventos de mudanza. La aplicación ofrece diversas funcionalidades basadas en el rol del usuario (usuario o acompañante).
 
 ## Descripción del Proyecto
 
