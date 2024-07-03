@@ -4,22 +4,22 @@
 
 ## Descripción del Proyecto
 
-Fedem App es una aplicación desarrollada en Kotlin que permite a los usuarios gestionar su participación en eventos de mudanza. La aplicación cuenta con dos roles de usuario: **User** y **Acompañante**. Cada rol tiene acceso a diferentes funcionalidades:
+Fedem App es una aplicación desarrollada en Kotlin que permite a los usuarios gestionar su participación en eventos de mudanza. La aplicación cuenta con dos roles de usuario: **Socio** y **Ajeno**. Cada rol tiene acceso a diferentes funcionalidades:
 
-### Funcionalidades para el Rol de User
+### Funcionalidades para el Rol de Socio
 
-- **Ver Eventos Disponibles**: Los usuarios pueden ver una lista de todos los eventos de mudanza disponibles.
-- **Bonos de Comida**: Los usuarios pueden gestionar sus bonos de comida.
-- **Editar Perfil**: Los usuarios pueden actualizar su información personal.
-- **Información Útil**: Los usuarios tienen acceso a información sobre hoteles cercanos, sitios turísticos y otros recursos útiles.
+- **Ver Eventos Disponibles**: Los socios pueden ver una lista de todos los eventos de mudanza disponibles.
+- **Bonos de Comida**: Los socios pueden gestionar sus bonos de comida.
+- **Editar Perfil**: Los socios pueden actualizar su información personal.
+- **Información Útil**: Los socios tienen acceso a información sobre hoteles cercanos, sitios turísticos y otros recursos útiles.
 
-### Funcionalidades para el Rol de Acompañante
+### Funcionalidades para el Rol de Ajeno
 
-- **Ver Actividades Disponibles**: Los acompañantes pueden ver una lista de actividades disponibles en lugar de eventos.
-- **Inscripción en Actividades**: Los acompañantes pueden inscribirse en las actividades de su interés.
-- **Bonos de Comida**: Los acompañantes también pueden gestionar sus bonos de comida.
-- **Editar Perfil**: Los acompañantes pueden actualizar su información personal.
-- **Información Útil**: Los acompañantes tienen acceso a información sobre hoteles cercanos, sitios turísticos y otros recursos útiles.
+- **Ver Actividades Disponibles**: Los ajenos pueden ver una lista de actividades disponibles en lugar de eventos.
+- **Inscripción en Actividades**: Los ajenos pueden inscribirse en las actividades de su interés.
+- **Bonos de Comida**: Los ajenos también pueden gestionar sus bonos de comida.
+- **Editar Perfil**: Los ajenos pueden actualizar su información personal.
+- **Información Útil**: Los ajenos tienen acceso a información sobre hoteles cercanos, sitios turísticos y otros recursos útiles.
 
 ## Tecnologías Utilizadas
 
